@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./media/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Simpleat</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="content">
+            <!-- header -->
+            <header>
+                <div class="blue-light-bg">
+                    <div class="container">
+                        <div class="top-bar d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="d-flex col-md-8">
+                                <div class="action-btn-left d-flex col-sm-6">
+                                    <div class="cart-btn">
+                                        <a href="#">
+                                            <img src="./media/img/cart-icon.png" alt="cart">
+                                            <span>Cart</span>
+                                        </a>
+                                    </div>
+                                    <div class="contact-btn">
+                                        <a href="#">Contacts</a>
+                                    </div>
+                                </div>
+                                <div class="logo col-sm-6">
+                                    <img src="./media/img/logo.png" alt="logo">
+                                </div>
+                            </div>
+                            <div class="action-btn-right d-flex col-md-4">
+                                <div class="sing-in-btn">
+                                    <a href="#">
+                                        <img src="./media/img/signin-icon.png" alt="sign-in">
+                                        <span>Sing in</span>
+                                    </a>
+                                </div>
+                                <div class="order-btn">
+                                    <button class="custom-btn">Order now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="banner d-flex flex-wrap container">
+                    <div class="banner-image col-md-6">
+                        <img src="./media/img/bottles.png" class="img-fluid">
+                    </div>
+                    <div class="banner-description col-md-6">
+                        <div class="block-title">
+                            <h2>More than food</h2>
+                            <p>Everything your body needs in one bottle of Simpleat. Drink Simpleat and forget about
+                                hunger.
+                                Be the first to try nutrition designed for your needs.</p>
+                            <p><strong>Free shipping for orders over €90</strong></p>
+                        </div>
+                        <div>
+                            <div class="form-elem">
+                                <div class="list-label">Select number of bottles</div>
+                                <ul class="list-items">
+                                    <li>12 bottles</li>
+                                    <li>24 bottles</li>
+                                    <li>36 bottles</li>
+                                    <li>48 bottles</li>
+                                    <li>60 bottles</li>
+                                    <li>72 bottles</li>
+                                    <li>84 bottles</li>
+                                    <li>96 bottles</li>
+                                    <li>108 bottles</li>
+                                    <li>120 bottles</li>
+                                </ul>
+                            </div>
+                            <div class="action-form d-flex flex-wrap">
+                                <form class="action-form--item d-flex col-sm-6 ">
+                                    <input type="checkbox" id="checkboxB1" class="field-checkbox" />
+                                    <label for="checkboxB1" class="checkbox-label">
+                                        <span><strong>One-Time</strong></span>
+                                        <span>Purchase</span>
+                                    </label>
+                                </form>
+                                <form class="action-form--item d-flex col-sm-6">
+                                    <input type="checkbox" id="checkboxB2" class="field-checkbox" />
+                                    <label for="checkboxB2" class="checkbox-label">
+                                        <span><strong>Subscribe</strong></span>
+                                        <span>and save 5%</span>
+                                    </label>
+                                </form>
+                                <div class="action-form--item col-sm-6">
+                                    <p><strong>€32</strong></p>
+                                    <p>€2.60 per meal (400 kca)</p>
+                                </div>
+                                <div class="add-cart--btn action-form--item col-sm-6">
+                                    <button class="custom-btn">Add to card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </header>
+
+            <!-- main content -->
+            <div class="site-content">
+                <!-- about-us -->
+                <section class="about-us">
+                    <div class="container d-flex flex-wrap">
+                        <div class="about-us--des block-title col-lg-5">
+                            <h2>What is Simpleat?</h2>
+                            <img src="./media/img/white-icon.png" class="title-img">
+                            <p>Simpleat is made to provide the perfectly balanced diet with every nutrient your body
+                                needs for optimal health.</p>
+                            <p>Simpleat will take care of your hunger while you have more important things to do whether
+                                it is your work, business, travel or simply having fun.</p>
+                        </div>
+                        <div class="about-us--video col-lg-7">
+
+                            <!--Modal: Name-->
+                            <div class="modal fade" id="modal1" tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <!--Content-->
+                                    <div class="modal-content">
+                                        <!--Body-->
+                                        <div class="modal-body mb-0 p-0">
+                                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                <iframe width="100%" height="100%"
+                                                    src="https://www.youtube-nocookie.com/embed/CJN1n3fId_A"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    id="fileframe"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-bg-img">
+                                <img class="img-fluid z-depth-1" src="./media/img/screen-video.png">
+                            </div>
+                            <div class="play-btn" alt="video" data-toggle="modal" data-target="#modal1">
+                                <img src="./media/img/play-icon.png">
+                                <p>Play video</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- services -->
+                <section class="container">
+                    <div class="block-title">
+                        <h2>Why Simpleat?</h2>
+                        <img src="./media/img/title-icon.png" class="title-img">
+                        <p>Enjoy all benefits of Simpleat</p>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="block-item">
+                            <div>
+                                <img src="./media/img/serv1.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <h3 class="title">Complete nutrition</h3>
+                                <p>One bottle of Simleat provides 20% of your daiyly needs for calories and
+                                    micronutrients</p>
+                            </div>
+                        </div>
+                        <div class="block-item">
+                            <div>
+                                <img src="./media/img/serv2.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <h3 class="title">Save time</h3>
+                                <p>Spend your time on business, sport, work, family or fun. Simpleat will take care of
+                                    your nutrition.</p>
+                            </div>
+                        </div>
+                        <div class="block-item">
+                            <div>
+                                <img src="./media/img/serv3.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <h3 class="title">Save money</h3>
+                                <p>Reasonable price for a complete, balanced and healthy meal. </p>
+                            </div>
+                        </div>
+                        <div class="block-item">
+                            <div>
+                                <img src="./media/img/serv4.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <h3 class="title">Great health</h3>
+                                <p>Simpleat helps your body to stay healthy and vibrant.</p>
+                            </div>
+                        </div>
+                        <div class="block-item">
+                            <div>
+                                <img src="./media/img/serv5.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <h3 class="title">High energy</h3>
+                                <p>No sugar spikes, only sustainable level of energy.</p>
+                            </div>
+                        </div>
+                        <div class="block-item">
+                            <div class="services-item--img">
+                                <img src="./media/img/serv6.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <h3 class="title">No hunger</h3>
+                                <p>A bottle of Simpleat immediately saves you from hunger and satisfy your body needs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- testimonial -->
+                <section class="blue-light-bg">
+                    <div class="container">
+                        <div class="block-title">
+                            <h2>Testimonial</h2>
+                            <img src="./media/img/title-icon.png" class="title-img">
+                            <p>Simpleat is made to provide the perfectly balanced diet with every nutrient your body
+                                needs for optimal health.</p>
+                        </div>
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <div class="testimonial-item">
+                                <div class="t-video">
+                                    <video width="240" height="240" poster="./media/img/t-img1.png" class="video" >
+                                        <source src="./media/video/t-video.mp4" type="video/mp4">
+                                            You need an HTML 5-capable browser.
+                                    </video>
+                                </div>
+                                <div class="wrapper">
+                                    <div class="play-btn">
+                                        <img src="./media/img/play-icon.png">
+                                    </div>
+                                    <div class="testimonial-item--des">
+                                        <p><strong>Stiv, 25 &#8231; Manager</strong></p>
+                                        <p>Lorem ipsum dolor sit elit, sed do eiusmod elit, sed do eiusmod ipsum </p>
+                                    </div>     
+                                </div>                      
+                            </div>
+                            <div class="testimonial-item">
+                                <div class="t-video">
+                                    <video width="240" height="240" poster="./media/img/t-img2.png" class="video" >
+                                        <source src="./media/video/t-video.mp4" type="video/mp4">
+                                            You need an HTML 5-capable browser.
+                                    </video>
+                                </div>
+                                <div class="wrapper">
+                                    <div class="play-btn">
+                                        <img src="./media/img/play-icon.png">
+                                    </div>
+                                    <div class="testimonial-item--des">
+                                        <p><strong>Stiv, 25 &#8231; Manager</strong></p>
+                                        <p>Lorem ipsum dolor sit elit, sed do eiusmod elit, sed do eiusmod ipsum </p>
+                                    </div>     
+                                </div>                      
+                            </div>
+                            <div class="testimonial-item">
+                                <div class="t-video">
+                                    <video width="240" height="240" poster="./media/img/t-img3.png" class="video" >
+                                        <source src="./media/video/t-video.mp4" type="video/mp4">
+                                            You need an HTML 5-capable browser.
+                                    </video>
+                                </div>
+                                <div class="wrapper">
+                                    <div class="play-btn">
+                                        <img src="./media/img/play-icon.png">
+                                    </div>
+                                    <div class="testimonial-item--des">
+                                        <p><strong>Stiv, 25 &#8231; Manager</strong></p>
+                                        <p>Lorem ipsum dolor sit elit, sed do eiusmod elit, sed do eiusmod ipsum </p>
+                                    </div>     
+                                </div>                      
+                            </div>
+                            <div class="testimonial-item">
+                                <div class="t-video">
+                                    <video width="240" height="240" poster="./media/img/t-img4.png" class="video" >
+                                        <source src="./media/video/t-video.mp4" type="video/mp4">
+                                            You need an HTML 5-capable browser.
+                                    </video>
+                                </div>
+                                <div class="wrapper">
+                                    <div class="play-btn">
+                                        <img src="./media/img/play-icon.png">
+                                    </div>
+                                    <div class="testimonial-item--des">
+                                        <p><strong>Stiv, 25 &#8231; Manager</strong></p>
+                                        <p>Lorem ipsum dolor sit elit, sed do eiusmod elit, sed do eiusmod ipsum </p>
+                                    </div>     
+                                </div>                      
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ingredients -->
+                <section class="container">
+                    <div class="block-title">
+                        <h2>Main ingredients</h2>
+                        <img src="./media/img/title-icon.png" class="title-img">
+                        <p>What is inside Simpleat?</p>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="block-item">
+                            <div>
+                                <img src="./media/img/i-img1.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <h3 class="title">Soybean protein</h3>
+                                <p>Soy is a complete protein and rich in vitamins and minerals. Soybean protein provides
+                                    all the essential amino acids in the amounts needed for human health.</p>
+                            </div>
+                        </div>
+                        <div class="block-item">
+                            <div>
+                                <img src="./media/img/i-img2.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <h3 class="title">Oils</h3>
+                                <p>The perfect mix of lipids from sea algae, coconut, sunflower, flaxseed and canola.
+                                    Rich with omega-3, unsaturated fatty acids DHA and EPA, which contribute to the
+                                    normal function of the heart and brain function.</p>
+                            </div>
+                        </div>
+                        <div class="block-item">
+                            <div>
+                                <img src="./media/img/i-img3.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <h3 class="title">Oat flour</h3>
+                                <p>Oat flour is made from whole oats and contains beta-glucans. This fiber have shown to
+                                    lower risk factors for heart disease such as high cholesterol and high blood
+                                    pressure.</p>
+                            </div>
+                        </div>
+                        <div class="block-item">
+                            <div>
+                                <img src="./media/img/i-img4.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <h3 class="title">Isomaltulose</h3>
+                                <p>Isomaltulose is a natural occurring disaccharide. It keeps you energetic without the
+                                    spikes of refined sugar.</p>
+                            </div>
+                        </div>
+                        <div class="block-item">
+                            <div>
+                                <img src="./media/img/i-img5.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <h3 class="title">Minerals & Vitamins</h3>
+                                <p>A bottle of Simpleat contains 20% of daily requirements of all micronutrients for
+                                    your body.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- nutritional facts -->
+                <section class="blue-light-bg">
+                    <div class="container nutrition-block">
+                        <div class="block-title">
+                            <h2>NUtritional facts</h2>
+                            <img src="./media/img/title-icon.png" class="title-img">
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="d-flex flex-column justify-content-around column-left col-lg-4">
+                                <div class="nutrition-item d-flex">
+                                    <div class="nutrition-item--des">
+                                        <h4>Energy</h4>
+                                        <p>400 kcal in one bottle</p>
+                                        <p>20% of your daily needs</p>
+                                    </div>
+                                    <div>
+                                        <img src="./media/img/n-icon1.png">
+                                    </div>
+                                </div>
+                                <div class="nutrition-item d-flex">
+                                    <div class="nutrition-item--des">
+                                        <h4>Nutrients</h4>
+                                        <p>25 micronutrients</p>
+                                        <p>20% of your daily requirements in each bottle</p>
+                                    </div>
+                                    <div>
+                                        <img src="./media/img/n-icon2.png">
+                                    </div>
+                                </div>
+                                <div class="nutrition-item d-flex">
+                                    <div class="nutrition-item--des">
+                                        <h4>Neutral pleasant taste</h4>
+                                        <p>Enjoy Simpleat's neutral taste several times a day and never get tired</p>
+                                    </div>
+                                    <div>
+                                        <img src="./media/img/n-icon3.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-flex justify-content-center">
+                                <img src="./media/img/n-bottles.png" class="img-fluid">
+                            </div>
+                            <div class="d-flex flex-column justify-content-around column-right col-lg-4">
+                                <div class="nutrition-item d-flex">
+                                    <div class="nutrition-item--des">
+                                        <h4>Vegan, lacoste-free, nut-free</h4>
+                                        <p>Easy to make food decision.</p>
+                                    </div>
+                                    <div>
+                                        <img src="./media/img/n-icon4.png">
+                                    </div>
+                                </div>
+                                <div class="nutrition-item d-flex">
+                                    <div class="nutrition-item--des">
+                                        <h4>Scientifically approved</h4>
+                                        <p>Simpleat is designed in a lab, based on clinical studies and produced using
+                                            the latest high-tech.</p>
+                                    </div>
+                                    <div>
+                                        <img src="./media/img/n-icon5.png">
+                                    </div>
+                                </div>
+                                <div class="nutrition-item d-flex">
+                                    <div class="nutrition-item--des">
+                                        <h4>Anywhere you go</h4>
+                                        <p>1-year shelf life and no refrigeration required. Excellent nutrition is
+                                            always with you</p>
+                                    </div>
+                                    <div>
+                                        <img src="./media/img/n-icon6.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-file">
+                            <a href="./media/ФЗ Simpleat.me для верстальщиков.pdf" download>Download PDF</a>
+                        </div>
+                        <div class="order-btn">
+                            <button class="custom-btn">Order now</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- chart -->
+                <section class="container chart-section">
+                    <div class="block-title">
+                        <h2>Low glycemic and insulin index</h2>
+                        <img src="./media/img/title-icon.png" class="title-img">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="chart">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </section>
+                <!-- product overview -->
+                <section class="blue-light-bg">
+                    <div class="container">
+                        <div class="block-title">
+                            <h2>Simpleat &#8213; Super food</h2>
+                            <img src="./media/img/title-icon.png" class="title-img">
+                            <p>Nutritional profile.</p>
+                            <p>Click on the Title to learn more...</p>
+                        </div>
+                        <div class="tabs">
+                            <ul class="d-flex flex-wrap justify-content-around">
+                                <li class="active">Macronutreins</li>
+                                <li>Vitamins</li>
+                                <li>Minerals</li>
+                            </ul>
+                        </div>
+                        <div class="product-des d-flex flex-wrap">
+                            <div class="box-arrow-top"></div>
+                            <div class="product-des--image col-sm-5">
+                                <img src="./media/img/bottle.png" class="img-fluid">
+                                <div class="q-text">
+                                    <p>What's inside?</p>
+                                </div>
+                            </div>
+                            <div class="product-des--table col-sm-7">
+                                <table></table>
+                            </div>
+                        </div>
+                        <div class="order-btn">
+                            <button class="custom-btn">Order now</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- join us -->
+                <section class="container">
+                    <div class="block-title">
+                        <h2>Join us</h2>
+                        <img src="./media/img/title-icon.png" class="title-img">
+                        <p>Stay updated, enjoy special offers and bonuses</p>
+                    </div>
+                    <div class="subscribe">
+                        <input type="text" placeholder="Your e-mail">
+                        <button class="custom-btn">Sing up!</button>
+                    </div>
+                </section>
+            </div>
+
+            <!-- footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="social-icons d-flex justify-content-center">
+                        <div class="social-icon">
+                            <a href="#">
+                                <i class="fab fa-facebook-square"></i>
+                                <p>BLOG</p>
+                            </a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#">
+                                <i class="fab fa-twitter-square"></i>
+                                <p>FAQ</p>
+                            </a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#">
+                                <i class="fab fa-instagram-square"></i>
+                                <p>LEGAL</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>&#169; 2018, Simpleat</p>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <div class="container">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <div class="d-flex flex-wrap">
+                                <div class="contact-item d-flex">
+                                    <div class="icon">
+                                        <img src="./media/img/phone-icon.png">
+                                    </div>
+                                    <div class="contact-info">
+                                        <a href="tel:+123 456-789-000">+123 456-789-000</a>
+                                        <p class="sm-text">Every day from 8AM - 8PM</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item d-flex">
+                                    <div class="icon">
+                                        <img src="./media/img/email-icon.png" class="img-fluid">
+                                    </div>
+                                    <div class="contact-info">
+                                        <a href="mailto:info@simpleat.me">info@simpleat.me</a>
+                                        <p class="sm-text">We will respond ASAP</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lang-list">
+                                <select class="selectpicker" data-width="fit">
+                                    <option data-content='<span class="flag-icon flag-icon-gb"></span> English'>English</option>
+                                    <option data-content='<span class="flag-icon flag-icon-fr"></span> French'>French</option>
+                                    <option data-content='<span class="flag-icon flag-icon-ru"></span> Russian'>Russian</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- coockie -->
+            <div class="coockie">
+                <div class="d-lg-flex justify-content-center align-items-center">
+                    <img src="./media/img/alert-icon.png">
+                    <p>This website uses cookies. The information in the cookies is used to provide the best experience for you on our website.</p>
+                    <button class="custom-btn accept-btn">I agree</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/chart.js"></script>
+    <script src="./js/product-overview.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('.selectpicker').selectpicker();
+        });
+    </script>
+</body>
+
+</html>

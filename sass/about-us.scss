@@ -1,0 +1,68 @@
+.about-us {
+    background-color: $blue;
+
+    .play-btn {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+
+        p {
+            margin: 10px 0;
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &:visited  {
+            display: none;
+        }
+    }
+
+    h2,
+    p {
+        color: $white;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .modal-dialog {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 448px){
+    .about-us .about-us--video {
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .about-us {
+        .about-us--des {
+            padding-right: 40px;
+        }
+        
+        .about-us--video {
+            padding-left: 40px;
+            min-height: 300px;
+        }
+
+        .play-btn {
+            width: calc(100% - 50px);
+            left: 40px;
+        }
+    }
+}

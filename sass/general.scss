@@ -1,0 +1,138 @@
+@import './colors.scss';
+
+body {
+    margin: 0;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: $gray;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+input {
+    border: 2px solid $light-gray;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.blue-light-bg {
+    background-color: $light-blue;
+    width: 100%;
+}
+
+.custom-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: $white;
+    border: none;
+    background-color: $green;
+    padding: 15px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-weight: 700;
+
+    &:focus {
+        border: none;
+    }
+}
+
+.block-title {
+    text-align: center;
+    
+    h2 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 60px;
+        color: $dark-blue;
+        font-weight: 100;
+        margin: 0;
+    }
+}
+
+.title-img {
+    margin: 20px 0;
+    width: auto;
+}
+
+.title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    font-weight: 100;
+    color: $dark-blue;
+}
+
+.block-item {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.tabs {
+    ul {
+        margin: 20px 0;
+    }
+
+    li {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 24px;
+
+        &:after {
+            content: ' ';
+            display: block;
+            width: 50%;
+            margin: auto;
+            border-bottom: 2px solid $black;
+        }
+
+        &:hover {
+            color: $blue;
+            cursor: pointer;
+
+            &:after {
+                border-bottom: 2px solid $blue;
+            }
+        }
+    }
+}
+
+.subscribe {
+    text-align: center;
+    margin: 20px 0;
+
+    input {
+        margin-bottom: 20px;
+    }
+}
+
+.chart {
+    width: 100%;
+}
+
+@media only screen and (min-width: 448px) {
+    .block-item {
+        width: 185px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .chart {
+        width: 700px;
+        height: 300px;
+        margin: auto;
+    }
+}

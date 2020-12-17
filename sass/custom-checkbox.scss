@@ -1,0 +1,88 @@
+.checkbox-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    width: 100px;
+    text-align: left;
+    padding: 0 0 0 10px;
+    cursor: pointer;
+
+    strong {
+        color: $dark-blue;
+    }
+
+    span {
+        color: $light-gray;
+    }
+}
+
+input[type=checkbox].field-checkbox {
+    position: relative;
+    height: 33px; 
+    width: 33px; 
+    margin: 0;
+    cursor: pointer;
+    -moz-appearance: initial;
+    
+    &:before {
+        content: ' ';
+        position: absolute;
+        background: url('../media/img/unchecked.png') no-repeat;
+        background-size: cover;
+        width: 36px;
+        height: 36px;
+        top: -2px;
+        left: -2px;
+        
+    }
+
+    &:checked + label.checkbox-label {
+        strong {
+            color: $blue;
+        }
+
+        &:before {
+            content: ' ';
+            position: absolute;
+            background: url('../media/img/checked.png') no-repeat;
+            background-size: cover;
+            width: 37px;
+            height: 37px;
+            top: -2px;
+            left: -2px;
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.action-form .message-box {
+    position: absolute;
+    width: 230px;
+    background-color: $white;
+    bottom: 100%;
+    padding: 10px;
+    box-shadow: 0px 10px 11px 3px $gray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+    a, p {
+        font-size: 12px;
+    }
+
+    a {
+        font-weight: 700;
+    }
+
+    &:before {
+        content: ' ';
+        position: absolute;
+        bottom: -15px;
+        border-top: solid 15px $white;
+        border-left: solid 15px transparent;
+        border-right: solid 15px transparent;
+        left: 100px;
+    }
+}

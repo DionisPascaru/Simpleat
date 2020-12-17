@@ -1,0 +1,74 @@
+.banner {    
+    .banner-image,
+    .banner-description {
+        text-align: center;
+    }
+
+    .banner-image {
+        padding: 50px 0;
+    }
+
+    .form-elem {
+        position: relative;
+
+        .list-label {
+            width: 100%;
+            margin: 10px 0 0;
+            border: 1px solid $light-gray;
+            border-radius: 5px;
+            font-size: 20px;
+            padding: 15px;
+            color: $dark-blue;
+            cursor: pointer;
+
+            option {
+                font-size: 16px;
+            }
+        }    
+        
+        .list-items {
+            display: none;
+            position: absolute;
+            width: 100%;
+            border: 1px solid $light-gray;
+            margin-top: 5px;
+            border-radius: 5px;
+            text-align: left;
+            background-color: $white;
+            z-index: 9;
+        }
+
+        li {
+            color: $dark-blue;
+            font-size: 16px;
+            padding: 5px 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $light-gray;
+                font-weight: 700;
+            }
+        }
+    }
+    
+    .action-form {
+        margin: 10px 0;
+    }
+
+    .action-form--item {
+        margin: 20px 0;
+        padding: 0;
+
+        p {
+            margin: 3px;
+            text-align: left;
+        }
+    }
+
+    .add-cart--btn .custom-btn {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+ 

@@ -1,0 +1,65 @@
+.nutrition-block {
+    p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    h4 {
+        font-size: 15px;
+        margin: 5px 0; 
+        font-weight: 700;
+    }
+
+    .nutrition-item {
+        img {
+            margin: 0 15px;
+        }
+    }
+
+    .nutrition-item {
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+    
+    .d-file {
+        text-align: center;
+        margin: 20px 0;
+
+        a {
+            font-family: 'Montserrat', sans-serif;
+            color: $green;
+        }
+    }
+
+    .order-btn {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .column-left {  
+        text-align: right;
+
+        .nutrition-item {
+            justify-content: flex-end;
+
+            &:nth-child(2) {
+                margin-right: 40px;
+            }
+        }       
+    }
+
+    .column-right {       
+        .nutrition-item {
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            text-align: left;
+
+            &:nth-child(2) {
+                margin-left: 40px;
+            }
+        }       
+    }
+}
+
